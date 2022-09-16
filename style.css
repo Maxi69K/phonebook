@@ -1,0 +1,34 @@
+#timer {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: #E9ECEF;
+}
+
+#conBtn,
+#addConBtn,
+#editDelBtn {
+    margin: 10px;
+    width: 150px;
+}
+
+#formView {
+    display: none;
+}
+
+#editFormView {
+    display: none;
+}
+
+#editView {
+    display: none;
+}
+
+#search {
+    width: 150px;
+    margin-left: 105px;
+}
+
+.container-fluid {
+    background-color: #c2f0c2;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h3>Phonebook ☎</h3>
+        <div id="timer"></div>
+        <button id="conBtn" class="btn btn-primary">Contacts</button>
+        <button id="addConBtn" class="btn btn-info">Add Contact</button>
+        <button id="editDelBtn" class="btn btn-danger">Edit / Delete</button>
+    </div>
+    <div class="container-fluid">
+        <!-- mainView -->
+        <div id="mainView" class="row">
+            <div class="col-8 offset-2">
+                <h4 class="display-4">Contacts</h4>
+                <!-- search -->
+                <div class="form-group my-3">
+                    <input id="search" placeholder="Search Contacts" class="form-control" type="text" />
+                </div>
+
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Number</th>
+                                    <th>Number2</th>
+                                    <th>Number3</th>
+                                    <th>E-mail</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mainBody">
+                                <!-- tbody data JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- formView -->
+        <div id="formView" class="row">
+            <div class="col-8 offset-2">
+                <h4 class="display-4">Add Contact</h4>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <input id="conName" type="text" placeholder="Name" class="form-control"><br>
+                        <input id="conNamber" type="text" placeholder="Number" class="form-control"><br>
+                        <input id="conNamber2" type="text" placeholder="Number2" class="form-control"><br>
+                        <input id="conNamber3" type="text" placeholder="Number3" class="form-control"><br>
+                        <input id="conEmail" type="text" placeholder="E-mail" class="form-control"><br>
+                        <button id="saveBtn" class="btn btn-primary form-control">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- editFormView -->
+        <div id="editFormView" class="row">
+            <div class="col-8 offset-2">
+                <h4 class="display-4">Edit Contact</h4>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <input id="econName" type="text" placeholder="Name" class="form-control"><br>
+                        <input id="econNamber" type="text" placeholder="Number" class="form-control"><br>
+                        <input id="econNamber2" type="text" placeholder="Number2" class="form-control"><br>
+                        <input id="econNamber3" type="text" placeholder="Number3" class="form-control"><br>
+                        <input id="econEmail" type="text" placeholder="E-mail" class="form-control"><br>
+                        <button id="editBtn" class="btn btn-info form-control">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- editView -->
+        <div id="editView" class="row">
+            <div class="col-8 offset-2">
+                <h4 class="display-4">Edit / Delete</h4>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Number</th>
+                                    <th>Number2</th>
+                                    <th>Number3</th>
+                                    <th>E-mail</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="editBody">
+                                <!-- tbody data JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
